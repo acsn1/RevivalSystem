@@ -1,0 +1,5 @@
+name: RevivalSystem
+version: '${project.version}'
+main: me.acsn.revivalsystem.RevivalSystem
+api-version: 1.18
+authors: [ acsn ]
