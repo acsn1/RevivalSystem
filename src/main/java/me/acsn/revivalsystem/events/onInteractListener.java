@@ -22,7 +22,7 @@ public class onInteractListener implements Listener {
         if(event.getRightClicked() instanceof Player){
 
             Player player = (Player) event.getRightClicked();
-
+       if(event.getPlayer().getInventory().getItemInMainHand().getType().equals(Material.GOLDEN_APPLE)) {
             if(core.dead.containsKey(player.getUniqueId())){
                 long time = core.dead.get(player.getUniqueId());
 
@@ -43,6 +43,7 @@ public class onInteractListener implements Listener {
                     }
                 }
             }
+          }
 
         }
     }
