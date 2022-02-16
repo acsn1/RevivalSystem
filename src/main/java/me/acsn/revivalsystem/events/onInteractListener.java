@@ -30,7 +30,8 @@ public class onInteractListener implements Listener {
 
                     core.dead.remove(player.getUniqueId());
                     player.removePotionEffect(PotionEffectType.BLINDNESS);
-
+                    //If you want to completely revive the player
+                    //player.setHealth(20.0); 
                     for(Entity entities:player.getNearbyEntities(player.getLocation().getX(),
                             player.getLocation().getY(), player.getLocation().getZ())){
 
